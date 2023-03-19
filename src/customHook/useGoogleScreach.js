@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react'
 import API_KEY from '../keys'
 
-const CONTEXT_KEY = "04321e74eed41474c"
+// get this key from https://programmablesearchengine.google.com/controlpanel/create
+const CONTEXT_KEY = process.env.REACT_APP_CONTEXT_KEY
 
 const useGoogleScreach = (term) => {
   const [data, setData] = useState(null)

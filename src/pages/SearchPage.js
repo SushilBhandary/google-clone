@@ -1,9 +1,9 @@
 import React from 'react'
 import './SearchPage.css'
-import { useStateValue } from '../StateProvider'
-import useGoogleScreach from '../useGoogleScreach'
+import { useStateValue } from '../contextAPI/StateProvider'
+import useGoogleScreach from '../customHook/useGoogleScreach'
 import { Link } from 'react-router-dom'
-import Search from './Search'
+import Search from '../components/Search'
 import SearchIcon from '@mui/icons-material/Search';
 import DescriptionIcon from '@mui/icons-material/Description';
 import ImageIcon from '@mui/icons-material/Image';
